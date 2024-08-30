@@ -470,25 +470,26 @@ p {
     flex-direction: column;
     gap: 30px;
   }
+}
 
-  /* 920 */
-  @media screen and (max-width: 920px) {
+/* 920 */
+@media screen and (max-width: 920px) {
 
-    /* header */
-    .header__top {
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    /* video, cta */
-    .video__inner,
-    .cta__inner {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .video__left,
-    .cta__left {
-      width: 100%;
-    }
+  /* header */
+  .header__top {
+    flex-direction: column;
+    gap: 10px;
   }
+
+  /* video, cta */
+  .video__inner,
+  .cta__inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video__left,
+  .cta__left {
+    width: 100%;
+  }
+}
