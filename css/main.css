@@ -1,5 +1,4 @@
 /* main */
-
 html {
   box-sizing: border-box;
 }
@@ -48,7 +47,6 @@ p {
 }
 
 /* header */
-
 .header {
   background-image: url(../img/header/header__bg.png);
   background-size: cover;
@@ -68,7 +66,6 @@ p {
 .header__link {
   text-decoration: none;
 }
-
 
 .header__menu {
   display: flex;
@@ -186,6 +183,130 @@ p {
   width: 100%;
 }
 
+/* possibilities */
+.possibilities {
+  padding: 63px 0 224px;
+  background-color: #fafafa;
+}
+
+.possibilities__title {
+  margin-bottom: 63px;
+}
+
+.possibilities__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.possibilities__item {
+  position: relative;
+}
+
+.possibilities__img {
+  width: 100%;
+}
+
+.possibilities__card {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  padding: 25px 32px;
+  width: 293px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.possibilities__card__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.possibilities__card__descr {
+  font-size: 12px;
+  margin-bottom: 12px;
+  line-height: 21px;
+}
+
+.possibilities__card__link {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--acent);
+  transition: .2s ease;
+}
+
+.possibilities__card__link:hover {
+  color: #000;
+}
+
+
+/* technologies */
+.technologies {
+  padding: 63px 0 130px;
+}
+
+.technologies__title {
+  margin-bottom: 52px;
+}
+
+.technologies__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.technologies__item {
+  width: 255px;
+  text-align: center;
+}
+
+.technologies__number {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.technologies__number__title {
+  font-size: 100px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.technologies__number__img {
+  position: absolute;
+}
+
+.first {
+  top: 60px;
+  left: 85px;
+}
+
+.second,
+.third {
+  top: 60px;
+  left: 95px;
+}
+
+.fourth {
+  top: 70px;
+  left: 105px;
+}
+
+.technologies__item__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.technologies__item__descr {
+  font-size: 12px;
+  width: 191px;
+  margin: 0 auto;
+}
+
+
 /* cta */
 .cta {
   padding: 95px 0;
@@ -229,3 +350,145 @@ p {
 .cta__img {
   width: 100%;
 }
+
+/* feedback */
+.feedback {
+  padding: 159px 0 123px;
+}
+
+.feedback__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feedback__left {
+  width: 434px;
+}
+
+.feedback__title {
+  text-align: left;
+  margin-bottom: 56px;
+}
+
+.feedback__descr {
+  line-height: 21px;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.feedback__form__input {
+  width: 540px;
+  height: 60px;
+  border-radius: 6px;
+  padding-left: 31px;
+  border: 1px solid #333;
+  outline: none;
+  transition: .2s ease;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #333
+}
+
+.feedback__form__input::placeholder {
+  font-size: 16px;
+  color: rgba(19, 39, 67, 0.5);
+}
+
+.feedback__form__input:focus {
+  border: 1px solid var(--acent);
+}
+
+.feedback__form__btn {
+  background-color: var(--acent);
+  color: #fff;
+  transition: .2s ease;
+}
+
+.feedback__form__btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--acent);
+  color: var(--acent);
+}
+
+/* footer */
+.footer {
+  padding: 43px 0 47px;
+  background-color: #fafafa;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 19px;
+}
+
+.footer__descr {
+  font-size: 12px;
+  line-height: 21px;
+  margin-bottom: 45px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+}
+
+/* media */
+
+/* 1150 */
+@media screen and (max-width: 1150px) {
+
+  /* NoHover */
+  .header__top__btn:hover,
+  .header__menu__link:hover,
+  .header__bottom__btn:hover,
+  .video__link:hover,
+  .possibilities__card__link:hover,
+  .feedback__form__btn:hover {
+    pointer-events: none;
+  }
+
+  /* possibilities */
+  .possibilities__inner {
+    flex-wrap: wrap;
+    gap: 130px;
+  }
+
+  /* technologies */
+  .technologies__inner {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* feedback */
+  .feedback__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* 920 */
+  @media screen and (max-width: 920px) {
+
+    /* header */
+    .header__top {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* video, cta */
+    .video__inner,
+    .cta__inner {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .video__left,
+    .cta__left {
+      width: 100%;
+    }
+  }
