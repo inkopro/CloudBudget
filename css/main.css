@@ -99,6 +99,49 @@ p {
   transition: .2s ease;
 }
 
+.header__burger__btn {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__burger__btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  left: 0;
+  top: 7px;
+  background-color: #fafafa;
+  border-radius: 1px;
+}
+
+.header__burger__btn span:nth-child(1) {
+  top: 0;
+}
+
+.header__burger__btn span:nth-child(3) {
+  top: 14px;
+}
+
+.active span {
+  transform: scale(0);
+  transition: .2s ease;
+}
+
+.active span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.active span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+
 .header__top__btn:hover {
   background-color: #fff;
   color: var(--acent);
@@ -241,7 +284,6 @@ p {
   color: #000;
 }
 
-
 /* technologies */
 .technologies {
   padding: 63px 0 130px;
@@ -305,7 +347,6 @@ p {
   width: 191px;
   margin: 0 auto;
 }
-
 
 /* cta */
 .cta {
@@ -491,5 +532,75 @@ p {
   .video__left,
   .cta__left {
     width: 100%;
+  }
+}
+
+/* 580 */
+@media screen and (max-width: 580px) {
+
+  /* header */
+  .header__title {
+    font-size: 38px;
+  }
+
+  .header__descr {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .header__burger__btn {
+    display: block;
+  }
+
+  .header__top {
+    flex-direction: row;
+  }
+
+  .header__menu {
+    position: absolute;
+    top: 0;
+    background-color: var(--acent);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: .2s ease;
+    overflow: auto;
+    left: -100%;
+  }
+
+  .active {
+    left: 0;
+  }
+
+  .lock {
+    overflow: hidden;
+  }
+
+  /* feedback */
+  .feedback__left {
+    width: 100%;
+  }
+
+  .feedback__form__input {
+    width: 280px;
+  }
+}
+
+/* 380 */
+@media screen and (max-width: 380px) {
+
+  /* possibilities */
+  .possibilities__inner {
+    gap: 30px;
+  }
+
+  .possibilities__card {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
   }
 }
