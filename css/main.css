@@ -539,6 +539,10 @@ p {
 @media screen and (max-width: 580px) {
 
   /* header */
+  .header {
+    height: 100vh;
+  }
+
   .header__title {
     font-size: 38px;
   }
@@ -569,6 +573,11 @@ p {
     transition: .2s ease;
     overflow: auto;
     left: -100%;
+  }
+
+  .header__menu__link,
+  .header__top__btn {
+    font-size: 18px;
   }
 
   .active {
