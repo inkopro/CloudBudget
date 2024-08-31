@@ -560,6 +560,10 @@ p {
     flex-direction: row;
   }
 
+  .header__top__btn {
+    display: none;
+  }
+
   .header__menu {
     position: absolute;
     top: 0;
@@ -575,8 +579,7 @@ p {
     left: -100%;
   }
 
-  .header__menu__link,
-  .header__top__btn {
+  .header__menu__link {
     font-size: 18px;
   }
 
